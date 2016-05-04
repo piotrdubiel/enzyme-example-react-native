@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "scripts": {
     "start": "react-native start",
-    "test": "mocha --require react-native-mock/mock.js --compilers js:babel-core/register --recursive test/*.js"
+    "test": "mocha --require react-native-mock/mock.js --compilers js:babel-core/register --recursive test/*.js",
+    "fulltest": "mocha --compilers js:babel-core/register --recursive test/*.js"
   },
   "dependencies": {
-    "react-native": "^0.18.0"
+    "mockery": "^1.6.2",
+    "react-native": "^0.22.2"
   },
   "devDependencies": {
     "babel": "^6.3.26",
+    "babel-core": "^6.7.2",
     "babel-jest": "^6.0.1",
     "babel-preset-airbnb": "^1.0.1",
     "chai": "^3.4.1",
